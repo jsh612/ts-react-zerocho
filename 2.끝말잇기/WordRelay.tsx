@@ -22,6 +22,7 @@ const WordRelay = () => {
         setResult("땡");
         setValue("");
         if (input) {
+          //input 이 null인경우에 대비해서 if문을 써준다
           input.focus();
         }
       }
