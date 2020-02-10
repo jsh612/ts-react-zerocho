@@ -1,93 +1,55 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@jsh612 
-DefinitelyTyped
-/
-DefinitelyTyped
-2.8m
-637
-26.4k20.4k
- Code Issues 3,100 Pull requests 157 Actions Projects 3 Wiki Security Insights
-DefinitelyTyped/.gitignore
-@ExE-Boss ExE-Boss chore(gitignore): Ignore `*.log` files (#39271)
-cc1a4cd on 23 Oct 2019
-@Diullei@borisyankov@andy-ms@ExE-Boss@vvakame@Bartvds@xperiments@jeffmay@tomwanzek@sandersn@musicist288@mxl@minestarks@matthewkimber@lgrignon@LKay@staxmanade@Igorbek@KSXGitHub@horiuchi@couven92@pocesar@aleksanderd@iRON5
-59 lines (49 sloc)  555 Bytes
-  
-*.dll
-*.exe
-*.cmd
-*.pdb
-*.suo
-*.js
-*.user
-*.cache
-*.cs
-*.sln
-*.csproj
-*.map
-*.swp
-*.code-workspace
+*.iws
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+.idea/replstate.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+.idea/httpRequests
+.idea/caches/build_file_checksums.ser
+logs
 *.log
-.DS_Store
-
-_Resharper.DefinitelyTyped
-bin
-obj
-Properties
-
-# VIM backup files
-*~
-
-# test folder
-_infrastructure/tests/build
-
-# IntelliJ based IDEs
-.idea
-*.iml
-
-*.js.map
-!*.js/
-!scripts/new-package.js
-!scripts/not-needed.js
-!scripts/lint.js
-
-# npm
-node_modules
-package-lock.json
-npm-debug.log
-
-# Sublime
-.sublimets
-
-# Visual Studio Code
-.settings/launch.json
-.vs
-.vscode
-.history
-
-# yarn
-yarn.lock
-
-# pnpm
-shrinkwrap.yaml
-pnpm-lock.yaml
-pnpm-debug.log
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+pids
+*.pid
+*.seed
+*.pid.lock
+lib-cov
+coverage
+*.lcov
+.nyc_output
+.grunt
+bower_components
+.lock-wscript
+build/Release
+node_modules/
+jspm_packages/
+typings/
+*.tsbuildinfo
+.npm
+.eslintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.node_repl_history
+*.tgz
+.yarn-integrity
+.env
+.env.test
+.cache
+.next
+.nuxt
+dist
+.cache/
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
