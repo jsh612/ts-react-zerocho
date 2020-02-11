@@ -5,7 +5,11 @@ const ResponseCheck = () => {
   const [state, setState] = useState("waiting");
   const [message, setMessage] = useState("클릭해서 시작하세요.");
   const [result, setResult] = useState<number[]>([]);
+
+  // useRef는 세가지경우로 정의 되있으므로 상황에 맞게 제너릭 조정을 해야한다
+  // 이경우 밑에서 timeout.current에 새로운 값이 할당되므로 readonly가 아닌 것으로 지정해줘야한다
   const timeout = useRef<number | null>(null);
+
   const startTime = useRef(0);
   const endTime = useRef(0);
 
