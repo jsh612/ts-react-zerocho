@@ -31,6 +31,8 @@ const computerChoice = (imgCoords: ImgCoords) => {
 
 const RSP = () => {
   const [result, setResult] = useState("");
+
+  //타입 추론이 잘되도록 usestate에 제너릭 작성
   const [imgCoord, setImgCoord] = useState<ImgCoords>(rspCoords.바위);
   const [score, setScore] = useState(0);
   const interval = useRef<number>();
@@ -38,6 +40,9 @@ const RSP = () => {
   useEffect(() => {
     // componentDidMount, componentDidUpdate 역할(1대1 대응은 아님)
     console.log("다시 실행");
+
+    // window. 을 붙여주는 이유는 타입스크립트가 setInterval이 노드에서 실행되는지 윈도우에서 실행되는지
+    // 모르기떄문에 명시적으로 window.setInterval 임을 지정하기 위함이다.
     interval.current = window.setInterval(changeHand, 100);
     return () => {
       // componentWillUnmount 역할
