@@ -99,6 +99,10 @@ const reducer = (state: ReducerState, action: ReducerActions): ReducerState => {
 };
 
 const TicTacToe = () => {
+  //# useReducer 제너릭 잘 보기
+  //  - 제너릭 내부에 또 제너릭
+  //  - 해당 제너릭이 몬지 어려울경우 마우스를 올려서 해당 함수의 구조를 잘보기
+  //  - react에는 이미 React.Reducer가 있음
   const [state, dispatch] = useReducer<Reducer<ReducerState, ReducerActions>>(
     reducer,
     initialState

@@ -1,6 +1,7 @@
 import {
   Dispatch,
   FunctionComponent,
+  FC,
   useRef,
   useEffect,
   memo,
@@ -15,7 +16,7 @@ interface Props {
   dispatch: Dispatch<any>;
 }
 
-const Tr: FunctionComponent<Props> = ({ rowData, rowIndex, dispatch }) => {
+const Tr: FC<Props> = ({ rowData, rowIndex, dispatch }) => {
   console.log("tr rendered");
 
   const ref = useRef<[string[]?, Dispatch<any>?, number?]>([]);
