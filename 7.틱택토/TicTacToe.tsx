@@ -1,5 +1,7 @@
 import * as React from "react";
-import { useEffect, useReducer, useCallback, Reducer } from "react";
+
+//ReactNode 타입정의 한번 보기
+import { useEffect, useReducer, useCallback, Reducer, ReactNode } from "react";
 import Table from "./Table";
 
 interface ReducerState {
