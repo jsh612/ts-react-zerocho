@@ -7,7 +7,7 @@ import Table from "./Table";
 interface ReducerState {
   winner: "O" | "X" | "";
   turn: "O" | "X";
-  tableData: string[][];
+  tableData: string[][]; // 2차원 배열
   recentCell: [number, number];
 }
 
