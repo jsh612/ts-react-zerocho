@@ -26,6 +26,7 @@ export const CODE = {
 } as const;
 
 export type Codes = typeof CODE[keyof typeof CODE];
+
 interface Context {
   tableData: Codes[][];
   halted: boolean;
